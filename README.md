@@ -1,6 +1,6 @@
 # Employee Recruitment
 
-Employee recrutment adalah aplikasi management penerimaan pegawai menggunakan Codeigniter3.
+Employee recrutment atau Sistem Lowongan Kerja adalah aplikasi management penerimaan pegawai menggunakan Codeigniter3.
 
 ## Installation
 
@@ -11,7 +11,7 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => 'root',
+	'password' => '',
 	'database' => 'employee',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
