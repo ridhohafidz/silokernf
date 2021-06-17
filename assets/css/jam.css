@@ -1,0 +1,16 @@
+	.jam-digital {
+		width: 100%;
+		font-family: 'consolas','sans-serief';
+	}
+	.kotak{
+		float: left;
+		width: 25%;
+		margin: 5px;
+	}
+	.jam-digital p {
+		font-size: 20px;
+		text-align: center;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
