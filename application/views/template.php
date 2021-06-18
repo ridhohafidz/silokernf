@@ -4,7 +4,7 @@
 	<title>SilokerNF</title>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/main.css">
-      <link rel="shortcut icon" href="<?= base_url('assets/img/img-logo.jpeg') ?>" type="image/x-icon">
+      <link rel="shortcut icon" href="<?= base_url('assets/img/logo-STT-NF-1-removebg-preview.png') ?>" type="image/x-icon">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <img src="<?= base_url() ?>/assets/img/img-logo.jpeg" width="50px">
+  <img src="<?= base_url() ?>/assets/img/logo-STT-NF-1-removebg-preview.png" width="50px">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -66,7 +66,7 @@
 </div>
 
 <div class="footer text-center text-secondary mt-5 navbar-expand-lg navbar-bottom">
-CopyRight &copy; 2019 
+2021 &copy; Sistem Lowongan Kerja Nurul Fikri  
 </div>
 
 
