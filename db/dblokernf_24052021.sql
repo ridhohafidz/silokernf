@@ -1,8 +1,8 @@
--- MariaDB dump 10.18  Distrib 10.4.16-MariaDB, for Linux (x86_64)
+-- MySQL dump 10.17  Distrib 10.3.16-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: dblokernf
 -- ------------------------------------------------------
--- Server version	10.4.16-MariaDB
+-- Server version	10.3.16-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -45,7 +45,7 @@ CREATE TABLE `admin_login` (
 
 LOCK TABLES `admin_login` WRITE;
 /*!40000 ALTER TABLE `admin_login` DISABLE KEYS */;
-INSERT INTO `admin_login` VALUES (1,'admin1','$2y$10$OzTEtQZeenajvvqm6Mbh1.ONciNR95e8QLRA8OOActkqnMPrd7pcq','admin');
+INSERT INTO `admin_login` VALUES (1,'admin','$2y$10$tonZkQrnGnp9n38rWeMTieLPNxtDfvy4Z/35Q4rlFObsm/xFnSae.','admin');
 /*!40000 ALTER TABLE `admin_login` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-19 14:13:42
+-- Dump completed on 2021-06-22 11:26:19
