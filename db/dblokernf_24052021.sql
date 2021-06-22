@@ -124,7 +124,7 @@ CREATE TABLE `info_loker` (
 
 LOCK TABLES `info_loker` WRITE;
 /*!40000 ALTER TABLE `info_loker` DISABLE KEYS */;
-INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2019-07-13','2019-07-07'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Developme','2019-09-30','2019-07-07'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2019-07-20','2019-07-07');
+INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Developme','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22');
 /*!40000 ALTER TABLE `info_loker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-22 13:43:14
+-- Dump completed on 2021-06-22 14:39:36
