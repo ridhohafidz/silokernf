@@ -110,8 +110,8 @@ DROP TABLE IF EXISTS `info_loker`;
 CREATE TABLE `info_loker` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `info` varchar(100) NOT NULL,
-  `jabatan` varchar(20) NOT NULL,
-  `bagian` varchar(20) NOT NULL,
+  `jabatan` varchar(25) NOT NULL,
+  `bagian` varchar(25) NOT NULL,
   `tanggal_akhir` date NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
@@ -124,7 +124,7 @@ CREATE TABLE `info_loker` (
 
 LOCK TABLES `info_loker` WRITE;
 /*!40000 ALTER TABLE `info_loker` DISABLE KEYS */;
-INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Developme','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22');
+INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Development','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22');
 /*!40000 ALTER TABLE `info_loker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-22 14:39:36
+-- Dump completed on 2021-06-22 14:54:38
