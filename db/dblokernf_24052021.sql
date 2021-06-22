@@ -115,7 +115,7 @@ CREATE TABLE `info_loker` (
   `tanggal_akhir` date NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +124,7 @@ CREATE TABLE `info_loker` (
 
 LOCK TABLES `info_loker` WRITE;
 /*!40000 ALTER TABLE `info_loker` DISABLE KEYS */;
-INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Development','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22');
+INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Development','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22'),(9,'DevOps','Leader Infrastructure','DevOps Engineer','2021-06-22','2021-06-22');
 /*!40000 ALTER TABLE `info_loker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,7 +179,7 @@ CREATE TABLE `registrasi` (
   `tanggal` date DEFAULT NULL,
   `pas_foto` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,6 +188,7 @@ CREATE TABLE `registrasi` (
 
 LOCK TABLES `registrasi` WRITE;
 /*!40000 ALTER TABLE `registrasi` DISABLE KEYS */;
+INSERT INTO `registrasi` VALUES (9,'ridhohafidz','$2y$10$8oAuvBGf/yPF.h7sbWfQI.yMCYHyQzEvSRsF1jBGoCzTofcb/I5n2','Ridho Hafidz','2002-01-04','islam','Indonesia','smak',NULL,'19','Lajang','Laki-laki','Duren Baru Street','087881657190','2021-06-22','default.png');
 /*!40000 ALTER TABLE `registrasi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +231,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-22 14:54:38
+-- Dump completed on 2021-06-22 19:21:53
