@@ -27,6 +27,7 @@
 			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Sejarah Perusahaan</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/visi_misi') ?>">Visi & Misi </a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/partner') ?>">Partner Bisnis</a></li>
+			    <li class="list-group-item"><a href="<?= base_url('page/our_team') ?>">Our Team</a></li>				
 			</ul>
 		</div>
 		<div class="card mt-4">

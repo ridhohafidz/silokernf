@@ -49,6 +49,12 @@ class Page extends CI_Controller {
 	{
 		$this->template->load('template','page/partner');
 	}
+
+	public function our_team()
+	{
+		$this->template->load('template','page/our_team');
+	}
+
 	public function test_online()
 	{
 		$query = $this->db->get_where('hasil_test',['username' => $this->session->userdata('username')])->row();
