@@ -1,17 +1,43 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/jam.css">
 <div class="row mt-4">
-	<div class="col-md-9">
-		<div class="card">
-			<div class="card-body">
-				<h4>Partner Bisnis</h4>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,lpa qui officia deserunt mollit anim id est laborum.
-			</div>
+  <div class="col-md-9">
+	<div class="card">
+      <div class="card-body">
+       <h2 style="text-align: center;">Mainstay Team Siloker</h2>
+        <p class="mb-5" style="text-align: center;"> <strong> Kelompok 4 - Teknik Informatika 07
+        </strong> </p>
+       <div class="row">
+		<div class="col-md-6 mb-2 mt-2">
+        <img src="https://avatars3.githubusercontent.com/u/59719959?s=400&u=7ad9bd21fda643b2a015342e49ac1723bf81f5bc&v=4"
+        width="180" align="left" class="rounded-image">
+        <h6> <strong> Muhammad Ridho Hafidz </strong> </h6>
+        <p> 0110219051</p>
+        </div>
+        <div class="col-md-6 mb-2 mt-2">
+        <img src="https://avatars3.githubusercontent.com/u/72736186?s=460&u=2ef1774a3f728abfb54be95d95a0e3a70365b180&v=4"
+        width="180" align="left" class="rounded-image">
+        <h6> <strong> Sahrul Romadhon </strong> </h6>
+        <p> 0110220154</p>
+        </div>
+        </div>
+         <div class="row">
+         <div class="col-md-6 mt-4">
+         <img src="https://avatars2.githubusercontent.com/u/73012563?s=460&u=93146633159754704ce253e9bd584fa6cd2a8bdf&v=4"
+         width="180" align="left" class="rounded-image">
+         <h6> <strong> Putri Ramadhan </strong> </h6>
+         <p> 0110220030</p>
+         </div>
+
+          <div class="col-md-6 mt-4">
+          <img src="https://avatars3.githubusercontent.com/u/73302271?s=460&u=ee64234c31571754198e1b3aecf972e10e1ebd49&v=4"
+          width="180" align="left" class="rounded-image">
+          <h6> <strong> Sheilla Inayatul Maula </strong> </h6>
+          <p> 0110220227</p>
+          </div>
+          </div>
 		</div>
-	</div>
+		</div>
+	   </div>
 	<div class="col-md-3">
 		<div class="card">
 			<div class="card-header">Menu Navigasi</div>

@@ -57,12 +57,12 @@
 				  		</select>
 				  	</div>
 				  </div>
-				  <div class="form-group row">
+				  <!-- <div class="form-group row">
 					<label class="col-sm-3 col-form-label">Pas foto ijazah</label>
 				    <div class="col-sm-9">
 				      <input type="file" class="form-control" placeholder="foto_ijazah" name="foto_ijazah">
 				    </div>
-				  </div>
+				  </div> -->
 				  <div class="form-group row">
 					<label class="col-sm-3 col-form-label">Umur</label>
 				    <div class="col-sm-9">
