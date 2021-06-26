@@ -3,7 +3,7 @@
   <div class="col-md-9">
     <div class="card">
      <div class="card-body">
-	   <h2 style="text-align: center;">Mainstay Team Siloker</h2>
+	   <h2 style="text-align: center;"> <strong>  Mainstay Team Siloker </strong></h2>
         <p class="mb-5" style="text-align: center;"> <strong> Kelompok 4 - Teknik Informatika 07
         </strong> </p>
 	
@@ -41,7 +41,7 @@
 			<div class="card-header">Menu Navigasi</div>
 
 			<ul class="list-group list-group-flush">
-			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Sejarah Perusahaan</a></li>
+			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Tentang Perusahaan</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/visi_misi') ?>">Visi & Misi </a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/partner') ?>">Partner Bisnis</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/our_team') ?>">Our Team</a></li>

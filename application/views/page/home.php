@@ -4,19 +4,17 @@
 		<div class="card">
 			<div class="card-body">
 				<img src="<?= base_url() ?>/assets/img/gm1.jpg" width="100%">
-				<h4 class="mt-3">Sejarah perusahaan</h4>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<h4 class="mt-3"> <strong> Tentang Perusahaan </strong> </h4>
+				<strong>SILOKERNF </strong> Merupakan salah satu platform pencari lowongan pekerjaan yang di
+				tujukan kepada para pencari kerja dan fresh graduete yang mungkin sedang membutuhkan pekerjaan sesuai dengan
+            	skill serta pengalaman kerja yang pernah dilakukan sebelumnya. 	
+				Kami berperan sebagai fasilitator pencocokan dan komunikasi lapangan kerja antara pencari kerja dan
+            	perusahaan. <br><br>
+				Dengan pemahaman dan wawasan yang kami miliki di setiap negara, serta kemampuan kami dalam
+            	penguasaan teknologi, kami menyediakan lowongan dan kesempatan yang terbaik untuk para pencari kerja,
+            	dan di saat yang bersamaan memberikan calon-calon karyawan terbaik untuk perusahaan yang menjadi klien kami.
+            	Ketika Anda bergabung dengan SILOKERNF, kami sebagai penyedia informasi karier yang terpercaya akan
+            	memberikan solusi terbaik untuk pencarian kerja dan tenaga kerja.
 			</div>
 		</div>
 	</div>
@@ -25,7 +23,7 @@
 			<div class="card-header">Menu Navigasi</div>
 
 			<ul class="list-group list-group-flush">
-			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Sejarah Perusahaan</a></li>
+			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Tentang Perusahaan</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/visi_misi') ?>">Visi & Misi </a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/partner') ?>">Partner Bisnis</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/our_team') ?>">Our Team</a></li>

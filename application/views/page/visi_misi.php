@@ -3,19 +3,16 @@
 	<div class="col-md-9">
 		<div class="card">
 			<div class="card-body">
-				<h4>Visi Misi</h4>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h2 class="mb-3" style="text-align: center;"> <strong> Visi & Misi </strong></h2>
+			<img src=" <?= base_url() ?>/assets/img/iconvisimisi.png" width="75%">			
+			<br>
+				<h4> <strong>Visi</strong> </h4>
+				Visi kami adalah menghubungkan bisnis dengan bakat dan meningkatkan taraf hidup melalui karier yang lebih baik.
+				<br><br>
+				<h4> <strong>Misi</strong> </h4>
+				<li>Mengembangkan Sumber Daya Manusia yang handal dan berdayasaing</li>
+				<li>Menyediakan Layanan bagi kandidat untuk mencari kerja</li>
+				<li>Menyediakan Layanan bagi perusahaan termasuk Usaha Kecil Menengah / Perorangan mendapatkan kandidat karyawan potensial</li>								
 			</div>
 		</div>
 	</div>
@@ -24,7 +21,7 @@
 			<div class="card-header">Menu Navigasi</div>
 
 			<ul class="list-group list-group-flush">
-			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Sejarah Perusahaan</a></li>
+			    <li class="list-group-item"><a href="<?= base_url('page') ?>">Tentang Perusahaan</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/visi_misi') ?>">Visi & Misi </a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/partner') ?>">Partner Bisnis</a></li>
 			    <li class="list-group-item"><a href="<?= base_url('page/our_team') ?>">Our Team</a></li>				
