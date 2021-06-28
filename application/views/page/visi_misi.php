@@ -6,10 +6,10 @@
             <h2 class="mb-3" style="text-align: center;"> <strong> Visi & Misi </strong></h2>
 			<img src=" <?= base_url() ?>/assets/img/iconvisimisi.png" width="75%">			
 			<br>
-				<h4> <strong>Visi</strong> </h4>
+				<h3> <strong>Visi</strong> </h3>
 				Visi kami adalah menghubungkan bisnis dengan bakat dan meningkatkan taraf hidup melalui karier yang lebih baik.
 				<br><br>
-				<h4> <strong>Misi</strong> </h4>
+				<h3> <strong>Misi</strong> </h3>
 				<li>Mengembangkan Sumber Daya Manusia yang handal dan berdayasaing</li>
 				<li>Menyediakan Layanan bagi kandidat untuk mencari kerja</li>
 				<li>Menyediakan Layanan bagi perusahaan termasuk Usaha Kecil Menengah / Perorangan mendapatkan kandidat karyawan potensial</li>								

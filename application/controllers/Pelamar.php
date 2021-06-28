@@ -42,11 +42,6 @@ class Pelamar extends CI_Controller
 	}
 	public function registrasi()
 	{
-		// if(! empty($_FILES['foto_ijazah']['name'])) {
-		// 	$foto_ijazah = $this->_uploadImage('foto_ijazah');
-		// } else {
-		// 	$foto_ijazah = 'default.png';
-		// }
 		if(! empty($_FILES['foto_pelamar']['name'])) {
 			$foto_pelamar = $this->_uploadImage('foto_pelamar');
 		} else {
