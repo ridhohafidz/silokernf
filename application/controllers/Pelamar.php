@@ -55,13 +55,11 @@ class Pelamar extends CI_Controller
 			'agama'				=> $this->input->post('agama',true),
 			'kewarganegaraan'	=> $this->input->post('kewarganegaraan',true),
 			'jenjang_pendidikan'=> $this->input->post('jenjang_pendidikan',true),
-			'pas_foto_ijazah'	=> $foto_ijazah,
 			'umur'				=> $this->input->post('umur',true),
 			'status'			=> $this->input->post('status',true),
 			'jenis_kelamin'		=> $this->input->post('jk',true),
 			'alamat_lengkap'	=> $this->input->post('alamat',true),
 			'no_hp'				=> $this->input->post('no_hp',true),
-			'pas_foto'			=> $foto_pelamar,
 			'tanggal'			=> date('Y-m-d'),
 		];
 

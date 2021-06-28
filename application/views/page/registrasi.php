@@ -90,12 +90,6 @@
 				      <input type="text" class="form-control" placeholder="No Hp" name="no_hp">
 				    </div>
 				  </div>
-				  <!-- <div class="form-group row">
-					<label class="col-sm-3 col-form-label">Pas foto</label>
-				    <div class="col-sm-9">
-				      <input type="file" class="form-control" name="foto_pelamar">
-				    </div>
-				  </div> -->
 			</div>
 			<div class="card-footer">
 				<button class="btn btn-dark">Registrasi</button>
