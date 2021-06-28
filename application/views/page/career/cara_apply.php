@@ -3,20 +3,19 @@
 		<?= $this->session->flashdata('message'); ?>
 		<div class="card">
 			<div class="card-body">
-				<img src="<?= base_url() ?>/assets/img/cara-aply.jpg" width="100%">
-				<h4 class="mt-3">Tata cara apply</h4>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<img src="<?= base_url() ?>/assets/img/cara_apply.png" width="100%">
+				<h3 class="mt-3"><strong>Tata cara apply</strong></h3>
+				<li>Melakukan Regisrasi</li>
+				<p>Langkah awal, masuk ke website via PC atau smartphone lakukan registrasi. 
+				Setelah melakukan registrasi, selanjutnya login dengan akun yang sudah dibuatkan.</p> 
+				<li>Melengkapi Akun dan Unggah Resume</li>
+				<p>Sebelum melamar pekerjaan, lengkapi terlebih dahulu akun dengan informasi yang jelas dan benar. 
+				Upload resume, lamaran kerja dan dokumen pendukung lainnya yang dibutuhkan.</p>
+				<li>Melamar Pekerjaan</li>
+				<p>Pilih lowongan pekerjaan mengikuti poin-poin di penjelasan di atas kemudian apply lamaran pekerjaan.</p>  
+				<li>Test Online</li>
+				<p>Setelah data terkirim lengkap, selanjutnya diminta untuk mengikuti test online sampai selesai dan menunggu hasil test online.</p>
+
 			</div>
 		</div>
 	</div>

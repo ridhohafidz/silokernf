@@ -1,6 +1,7 @@
 <div class="row mt-4">
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
+	<img src=" <?= base_url() ?>/assets/img/login.svg" width="90%">	
 		<?= $this->session->flashdata('message'); ?>
 		<div class="card">
 			<div class="card-header">Login admin</div>

@@ -5,31 +5,27 @@
      <div class="card-body">
 	   <h2 style="text-align: center;"> <strong>  Mainstay Team Siloker </strong></h2>
         <p class="mb-5" style="text-align: center;"> <strong> Kelompok 4 - Teknik Informatika 07
+		<img src="<?= base_url() ?>/assets/img/our_team.png" width="85%">		
         </strong> </p>
-	
 		<div class="row">
 	 	  <div class="col-md-6 mb-2 mt-2">
-	  		<img src="https://avatars3.githubusercontent.com/u/59719959?s=400&u=7ad9bd21fda643b2a015342e49ac1723bf81f5bc&v=4" width="180" align="left" class="rounded-image">
-       		<h6> <strong> Muhammad Ridho Hafidz </strong> </h6>
-        	<p> 0110219051</p>
+       		<h4> <strong> Muhammad Ridho Hafidz </strong> </h4>
+        	<h6> 0110219051</h6>
      	  </div>
      		<div class="col-md-6 mb-2 mt-2">
-      			<img src="https://avatars3.githubusercontent.com/u/72736186?s=460&u=2ef1774a3f728abfb54be95d95a0e3a70365b180&v=4" width="180" align="left" class="rounded-image">
-       			<h6> <strong> Sahrul Romadhon </strong> </h6>
-       			<p> 0110220154</p>
+       			<h4> <strong> Sahrul Romadhon </strong> </h4>
+       			<h6> 0110220154</h6>
      		</div>
     	</div>
 
          <div class="row">
          	<div class="col-md-6 mt-4">
-         		<img src="https://avatars2.githubusercontent.com/u/73012563?s=460&u=93146633159754704ce253e9bd584fa6cd2a8bdf&v=4" width="180" align="left" class="rounded-image">
-         		<h6> <strong> Putri Ramadhan </strong> </h6>
-         		<p> 0110220030</p>
+         		<h4> <strong> Putri Ramadhan </strong> </h4>
+         		<h6> 0110220030</h6>
          	</div>
 			 <div class="col-md-6 mt-4">
-          		<img src="https://avatars3.githubusercontent.com/u/73302271?s=460&u=ee64234c31571754198e1b3aecf972e10e1ebd49&v=4" width="180" align="left" class="rounded-image">
-          		<h6> <strong> Sheilla Inayatul Maula </strong> </h6>
-          		<p> 0110220227</p>
+          		<h4> <strong> Sheilla Inayatul Maula </strong> </h4>
+          		<h6> 0110220227</h6>
           	</div>
         </div>
 

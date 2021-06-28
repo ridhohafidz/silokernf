@@ -3,7 +3,7 @@
 	<div class="col-md-9">
 		<div class="card">
 			<div class="card-body">
-				<img src="<?= base_url() ?>/assets/img/gm1.jpg" width="100%">
+				<img src="<?= base_url() ?>/assets/img/gm1.png" width="85%">
 				<h4 class="mt-3"> <strong> Tentang Perusahaan </strong> </h4>
 				<strong>SILOKERNF </strong> Merupakan salah satu platform pencari lowongan pekerjaan yang di
 				tujukan kepada para pencari kerja dan fresh graduete yang mungkin sedang membutuhkan pekerjaan sesuai dengan

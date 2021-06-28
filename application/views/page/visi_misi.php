@@ -4,7 +4,7 @@
 		<div class="card">
 			<div class="card-body">
             <h2 class="mb-3" style="text-align: center;"> <strong> Visi & Misi </strong></h2>
-			<img src=" <?= base_url() ?>/assets/img/iconvisimisi.png" width="75%">			
+			<img src=" <?= base_url() ?>/assets/img/visi_misi.png" width="92%">			
 			<br>
 				<h3> <strong>Visi</strong> </h3>
 				Visi kami adalah menghubungkan bisnis dengan bakat dan meningkatkan taraf hidup melalui karier yang lebih baik.
