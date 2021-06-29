@@ -5,7 +5,7 @@
      <div class="card-body">
 	   <h2 style="text-align: center;"> <strong>  Mainstay Team Siloker </strong></h2>
         <p class="mb-5" style="text-align: center;"> <strong> Kelompok 4 - Teknik Informatika 07
-		<img src="<?= base_url() ?>/assets/img/our_team.png" width="85%">		
+		<img src="<?= base_url() ?>/assets/img/our_team.svg" width="80%">		
         </strong> </p>
 		<div class="row">
 	 	  <div class="col-md-6 mb-2 mt-2">
