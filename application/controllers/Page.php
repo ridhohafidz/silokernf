@@ -111,7 +111,7 @@ class Page extends CI_Controller {
 					$benar += 1;
 				}
 			}
-			$result = $benar*40;
+			$result = $benar*40/2;
 			$data = [
 				'username'		=> $this->session->userdata('username'),
 				'hasil'			=> $result,
