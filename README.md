@@ -1,6 +1,20 @@
+# Pemrograman WEB Lanjutan
+## Sistem Informasi Lowongan Kerja NF - SILOKER
+STT Terpadu Nurul Fikri
+TI 07
+
+## KELOMPOK 
+
+```bash
+0110219051 - Muhammad Ridho Hafidz
+0110220030 - Putri Ramadhan
+0110220154 - Sahrul Romadhon
+0110220227 - Sheilla Inayatul Maula
+```
+
 # SilokerNF
 
-Sistem Lowongan Kerja adalah aplikasi management penerimaan pegawai menggunakan Codeigniter3.
+Sistem Lowongan Kerja adalah aplikasi management penerimaan pegawai menggunakan Framework Codeigniter3.
 
 ## Installation
 
