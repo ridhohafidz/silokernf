@@ -9,13 +9,14 @@
 			<div class="card-body">
 	
 				  <div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Username</label>
+				    <label class="col-sm-auto col-form-label">Username</label>
 				    <div class="col-sm-10">
 				      <input type="text" class="form-control" placeholder="Username" name="username" required>
 				    </div>
+					
 				  </div>
 				  <div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Password</label>
+				    <label class="col-sm-auto col-form-label">Password</label>
 				    <div class="col-sm-10">
 				      <input type="password" class="form-control" placeholder="Password" name="password" required>
 				    </div>
