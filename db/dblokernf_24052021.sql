@@ -63,7 +63,7 @@ CREATE TABLE `curiculum_vitae` (
   `name` varchar(25) NOT NULL,
   `cv` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +88,7 @@ CREATE TABLE `hasil_test` (
   `hasil` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `info_loker` (
   `tanggal_akhir` date NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `jawaban` (
   `jawaban` varchar(10) NOT NULL,
   `correct` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,6 @@ CREATE TABLE `jawaban` (
 
 LOCK TABLES `jawaban` WRITE;
 /*!40000 ALTER TABLE `jawaban` DISABLE KEYS */;
-INSERT INTO `jawaban` VALUES (49,'ridhohafidz','4','b',1),(50,'ridhohafidz','5','c',1),(51,'ridhohafidz','6','b',1),(52,'ridhohafidz','7','c',1),(53,'ridhohafidz','8','c',1);
 /*!40000 ALTER TABLE `jawaban` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,7 +177,7 @@ CREATE TABLE `registrasi` (
   `no_hp` varchar(20) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -207,7 +206,7 @@ CREATE TABLE `test_online` (
   `jawaban` varchar(10) NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -216,7 +215,7 @@ CREATE TABLE `test_online` (
 
 LOCK TABLES `test_online` WRITE;
 /*!40000 ALTER TABLE `test_online` DISABLE KEYS */;
-INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','b','2021-07-05'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(8,5,'Makanan Yang biking bingung','Semangka','Pepaya','Apel','c','2019-07-07');
+INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','b','2021-07-05'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(9,5,'Kenapa kamu suka persib?','Karena saya orang jawa barat','Karena saya orang argentina','Karena saya orang-orangan','a','2021-07-10');
 /*!40000 ALTER TABLE `test_online` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -229,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-10 13:55:39
+-- Dump completed on 2021-07-10 19:26:46
