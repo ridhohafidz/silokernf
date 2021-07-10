@@ -1,8 +1,8 @@
--- MySQL dump 10.17  Distrib 10.3.16-MariaDB, for Linux (x86_64)
+-- MariaDB dump 10.18  Distrib 10.4.16-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: dblokernf
 -- ------------------------------------------------------
--- Server version	10.3.16-MariaDB
+-- Server version	10.4.16-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -63,7 +63,7 @@ CREATE TABLE `curiculum_vitae` (
   `name` varchar(25) NOT NULL,
   `cv` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +88,7 @@ CREATE TABLE `hasil_test` (
   `hasil` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `jawaban` (
   `jawaban` varchar(10) NOT NULL,
   `correct` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,6 +151,7 @@ CREATE TABLE `jawaban` (
 
 LOCK TABLES `jawaban` WRITE;
 /*!40000 ALTER TABLE `jawaban` DISABLE KEYS */;
+INSERT INTO `jawaban` VALUES (49,'ridhohafidz','4','b',1),(50,'ridhohafidz','5','c',1),(51,'ridhohafidz','6','b',1),(52,'ridhohafidz','7','c',1),(53,'ridhohafidz','8','c',1);
 /*!40000 ALTER TABLE `jawaban` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,16 +171,14 @@ CREATE TABLE `registrasi` (
   `agama` varchar(15) DEFAULT NULL,
   `kewarganegaraan` varchar(20) DEFAULT NULL,
   `jenjang_pendidikan` varchar(30) DEFAULT NULL,
-  `pas_foto_ijazah` varchar(50) DEFAULT NULL,
   `umur` varchar(20) DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL,
   `jenis_kelamin` varchar(10) DEFAULT NULL,
   `alamat_lengkap` text DEFAULT NULL,
   `no_hp` varchar(20) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
-  `pas_foto` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +187,6 @@ CREATE TABLE `registrasi` (
 
 LOCK TABLES `registrasi` WRITE;
 /*!40000 ALTER TABLE `registrasi` DISABLE KEYS */;
-INSERT INTO `registrasi` VALUES (9,'ridhohafidz','$2y$10$8oAuvBGf/yPF.h7sbWfQI.yMCYHyQzEvSRsF1jBGoCzTofcb/I5n2','Ridho Hafidz','2002-01-04','islam','Indonesia','smak',NULL,'19','Lajang','Laki-laki','Duren Baru Street','087881657190','2021-06-22','default.png');
 /*!40000 ALTER TABLE `registrasi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -218,7 +216,7 @@ CREATE TABLE `test_online` (
 
 LOCK TABLES `test_online` WRITE;
 /*!40000 ALTER TABLE `test_online` DISABLE KEYS */;
-INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','a','2019-07-07'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(8,5,'Makanan Yang biking bingung','Semangka','Pepaya','Apel','c','2019-07-07');
+INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','b','2021-07-05'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(8,5,'Makanan Yang biking bingung','Semangka','Pepaya','Apel','c','2019-07-07');
 /*!40000 ALTER TABLE `test_online` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -231,4 +229,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-22 19:21:53
+-- Dump completed on 2021-07-10 13:55:39
