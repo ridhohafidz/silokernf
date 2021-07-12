@@ -71,7 +71,7 @@
 </div>
 
 <div class="footer text-center text-secondary mt-5 navbar-expand-lg navbar-bottom"> 
-  <strong>2021 &copy; Sistem Lowongan Kerja Nurul Fikri. All Rights Reserved.</strong>
+  <strong> &copy; 2021 Sistem Lowongan Kerja Nurul Fikri. All Rights Reserved.</strong>
 </div>
 
 
