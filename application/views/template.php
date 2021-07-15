@@ -3,7 +3,7 @@
 <head>
 	<title>SilokerNF</title>
 	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/main.css"> -->
       <link rel="shortcut icon" href="<?= base_url('assets/img/logo-STT-NF.png') ?>" type="image/x-icon">
 </head>
 <body>
@@ -32,10 +32,6 @@
           <a class="nav-link" href="<?= base_url('admin/login') ?>">Login</a>
         </li>
         <?php else: ?>
-        <li class="nav-itme">
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
-        </li>
-        <?php endif; ?>
 
         <?php if($this->session->has_userdata('username') ):?>
         <?php if(!$this->session->has_userdata('role')): ?>
@@ -43,13 +39,48 @@
           <a class="nav-link" href="<?= base_url('pelamar/profil') ?>"> Profile </a>
         </li>
         <?php endif; ?>
-        <li class="nav-item">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Career
+        </a>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                   
           <?php if($this->session->has_userdata('role')): ?>
-          <a class="nav-link" href="<?= base_url('admin/career') ?>">Career</a>
+          <a class="dropdown-item" href="<?= base_url('admin/career') ?>">Lowongan Kerja</a>
           <?php else: ?>
-          <a class="nav-link" href="<?= base_url('page/cara_apply') ?>">Career</a>
+          <a class="dropdown-item" href="<?= base_url('page/career') ?>">Lowongan Kerja</a>
           <?php endif;?>
-        </li>
+          <?php if($this->session->has_userdata('role')): ?>
+          <a class="dropdown-item" href="<?= base_url('admin/prodi') ?>">Program Studi</a>
+          <?php else: ?>
+          <a class="dropdown-item" href="<?= base_url('page/prodi') ?>">Program Studi</a>
+          <?php endif; ?>
+         </div>       
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Mitra
+        </a>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                   
+          <?php if($this->session->has_userdata('role')): ?>
+          <a class="dropdown-item" href="<?= base_url('admin/bidang_usaha') ?>">Bidang Usaha</a>
+          <?php else: ?>
+          <a class="dropdown-item" href="<?= base_url('page/bidang_usaha') ?>">Bidang Usaha</a>
+          <?php endif;?>
+          <?php if($this->session->has_userdata('role')): ?>
+          <a class="dropdown-item" href="<?= base_url('admin/sektor_usaha') ?>">Sektor Usaha</a>
+          <?php else: ?>
+          <a class="dropdown-item" href="<?= base_url('page/sektor_usaha') ?>">Sektor Usaha</a>
+          <?php endif; ?>
+          <?php if($this->session->has_userdata('role')): ?>
+          <a class="dropdown-item" href="<?= base_url('admin/mitra') ?>">Mitra Usaha</a>
+          <?php else: ?>
+          <a class="dropdown-item" href="<?= base_url('page/mitra') ?>">Mitra Usaha</a>
+          <?php endif; ?>          
+         </div>       
+      </li>      
+
         <li class="nav-item">
           <?php if($this->session->has_userdata('role')): ?>
           <a class="nav-link" href="<?= base_url('admin/test') ?>">Test Online</a>
@@ -57,6 +88,12 @@
           <a class="nav-link" href="<?= base_url('page/test_online') ?>">Test Online</a>
           <?php endif; ?>
         </li>
+
+        <li class="nav-itme">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+        </li>
+        <?php endif; ?>        
+
         <?php endif; ?>
       </ul>
     </div>

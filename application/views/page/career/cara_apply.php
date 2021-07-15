@@ -25,6 +25,7 @@
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item"><a href="<?= base_url('page/cara_apply') ?>">Tata Cara Apply</a></li>
 				<li class="list-group-item"><a href="<?= base_url('page/career') ?>">Daftar Lowongan Kerja</a></li>
+				<li class="list-group-item"><a href="<?= base_url('page/prodi') ?>">Daftar Program Studi</a></li>				
 				<li class="list-group-item">Upload Document</li>
 			</ul>
 		</div>

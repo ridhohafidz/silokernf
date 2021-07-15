@@ -50,6 +50,30 @@ INSERT INTO `admin_login` VALUES (1,'admin','$2y$10$tonZkQrnGnp9n38rWeMTieLPNxtD
 UNLOCK TABLES;
 
 --
+-- Table structure for table `bidang_usaha`
+--
+
+DROP TABLE IF EXISTS `bidang_usaha`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bidang_usaha` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bidang_usaha`
+--
+
+LOCK TABLES `bidang_usaha` WRITE;
+/*!40000 ALTER TABLE `bidang_usaha` DISABLE KEYS */;
+INSERT INTO `bidang_usaha` VALUES (1,'Teknologi Informasi dan Komunikasi'),(2,'Perbankan'),(3,'Pendidikan'),(4,'Transporasi'),(5,'Industri Nasional');
+/*!40000 ALTER TABLE `bidang_usaha` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `curiculum_vitae`
 --
 
@@ -63,7 +87,7 @@ CREATE TABLE `curiculum_vitae` (
   `name` varchar(25) NOT NULL,
   `cv` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -72,6 +96,7 @@ CREATE TABLE `curiculum_vitae` (
 
 LOCK TABLES `curiculum_vitae` WRITE;
 /*!40000 ALTER TABLE `curiculum_vitae` DISABLE KEYS */;
+INSERT INTO `curiculum_vitae` VALUES (10,8,'sahrul','Sahrul Roamadhon','default.png');
 /*!40000 ALTER TABLE `curiculum_vitae` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +113,7 @@ CREATE TABLE `hasil_test` (
   `hasil` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,6 +122,7 @@ CREATE TABLE `hasil_test` (
 
 LOCK TABLES `hasil_test` WRITE;
 /*!40000 ALTER TABLE `hasil_test` DISABLE KEYS */;
+INSERT INTO `hasil_test` VALUES (12,'sahrul',60,'2021-07-10');
 /*!40000 ALTER TABLE `hasil_test` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,7 +141,7 @@ CREATE TABLE `info_loker` (
   `tanggal_akhir` date NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +150,7 @@ CREATE TABLE `info_loker` (
 
 LOCK TABLES `info_loker` WRITE;
 /*!40000 ALTER TABLE `info_loker` DISABLE KEYS */;
-INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Development','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22'),(9,'DevOps','Leader Infrastructure','DevOps Engineer','2021-06-22','2021-06-22');
+INSERT INTO `info_loker` VALUES (6,'Dicari Kasir Wanita Untuk IndoApril','Kasir','Keuangan','2021-08-25','2021-06-22'),(7,'Programmer Node.js dan Vue.js','Programmer','Javascript Development','2021-09-01','2021-06-22'),(8,'Wordpress Development Plugin','Ketua Plugin Develop','CMS Development','2021-08-06','2021-06-22'),(9,'DevOps','Leader Infrastructure','DevOps Engineer','2021-06-22','2021-06-22'),(11,'Staf Tata Usaha','Senior Staf Tata Usaha','Tata Usaha','2021-07-31','2021-07-10');
 /*!40000 ALTER TABLE `info_loker` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +168,7 @@ CREATE TABLE `jawaban` (
   `jawaban` varchar(10) NOT NULL,
   `correct` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +177,68 @@ CREATE TABLE `jawaban` (
 
 LOCK TABLES `jawaban` WRITE;
 /*!40000 ALTER TABLE `jawaban` DISABLE KEYS */;
+INSERT INTO `jawaban` VALUES (59,'sahrul','4','b',1),(60,'sahrul','5','b',0),(61,'sahrul','6','a',0),(62,'sahrul','7','c',1),(63,'sahrul','9','a',1);
 /*!40000 ALTER TABLE `jawaban` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mitra`
+--
+
+DROP TABLE IF EXISTS `mitra`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `mitra` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `alamat` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `kontak` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
+  `telpon` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `email` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
+  `web` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  `bidang_usaha_id` int(11) NOT NULL,
+  `sektor_usaha_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `fk_mitra_bidang_usaha_idx` (`bidang_usaha_id`),
+  UNIQUE KEY `fk_mitra_sektor_usaha1_idx` (`sektor_usaha_id`),
+  CONSTRAINT `fk_mitra_bidang_usaha` FOREIGN KEY (`bidang_usaha_id`) REFERENCES `bidang_usaha` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `fk_mitra_sektor_usaha1` FOREIGN KEY (`sektor_usaha_id`) REFERENCES `sektor_usaha` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mitra`
+--
+
+LOCK TABLES `mitra` WRITE;
+/*!40000 ALTER TABLE `mitra` DISABLE KEYS */;
+INSERT INTO `mitra` VALUES (2,'PT Bukalapak','Jl Kemang No. 12','Zaki F','0859-42029','hrd@bukalapak.com','bukalapak.com',1,4),(9,'PT Rekayasa Industri','Jl Makam Pahlawan xbata No 182','Aries P','0812-8882329','hrd@rekin.go.id','www.rekin.go.id',5,2),(10,'PT Peruri','Jl. Palatehan No. 4, Blok K-V, Kebayoran Baru','Tulus Raihan','0896-03732822','contact@peruri.co.id','peruri.co.id',2,3);
+/*!40000 ALTER TABLE `mitra` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `prodi`
+--
+
+DROP TABLE IF EXISTS `prodi`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `prodi` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `kode` varchar(2) CHARACTER SET utf8 DEFAULT NULL,
+  `nama` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `prodi`
+--
+
+LOCK TABLES `prodi` WRITE;
+/*!40000 ALTER TABLE `prodi` DISABLE KEYS */;
+INSERT INTO `prodi` VALUES (1,'SI','Sistem Informasi'),(2,'TI','Teknik Informatika'),(3,'BD','Bisnis Digital'),(5,'IK','Ilmu Komunikasi');
+/*!40000 ALTER TABLE `prodi` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -177,7 +264,7 @@ CREATE TABLE `registrasi` (
   `no_hp` varchar(20) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +273,32 @@ CREATE TABLE `registrasi` (
 
 LOCK TABLES `registrasi` WRITE;
 /*!40000 ALTER TABLE `registrasi` DISABLE KEYS */;
+INSERT INTO `registrasi` VALUES (16,'sahrul','$2y$10$trl/Tc4Yos9wJV3uaixb6uEwhrBTBZO2nUUk4HizlkJS7VoAonl0G','Sahrul Romadhon','2001-12-25','islam','Indonesia','smak','21','Lajang','Laki-laki','Jl Raya Cilodong Depok','089603732822','2021-07-10');
 /*!40000 ALTER TABLE `registrasi` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sektor_usaha`
+--
+
+DROP TABLE IF EXISTS `sektor_usaha`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sektor_usaha` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(45) CHARACTER SET utf8 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sektor_usaha`
+--
+
+LOCK TABLES `sektor_usaha` WRITE;
+/*!40000 ALTER TABLE `sektor_usaha` DISABLE KEYS */;
+INSERT INTO `sektor_usaha` VALUES (1,'Pemerintahan'),(2,'BUMN'),(3,'Swasta'),(4,'Startup');
+/*!40000 ALTER TABLE `sektor_usaha` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -206,7 +318,7 @@ CREATE TABLE `test_online` (
   `jawaban` varchar(10) NOT NULL,
   `tanggal` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -215,7 +327,7 @@ CREATE TABLE `test_online` (
 
 LOCK TABLES `test_online` WRITE;
 /*!40000 ALTER TABLE `test_online` DISABLE KEYS */;
-INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','b','2021-07-05'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(9,5,'Kenapa kamu suka persib?','Karena saya orang jawa barat','Karena saya orang argentina','Karena saya orang-orangan','a','2021-07-10');
+INSERT INTO `test_online` VALUES (4,1,'Kapan Indonesia Merdeka?','Indonesia tidak pernah merdeka','17 Agustus 1945','2 Mei 1998','b','2021-07-10'),(5,2,'Bagaimana Cara memakan bubur?','Diaduk searah jarum jam','Diaduk menyilang','Ditelen','c','2019-07-07'),(6,3,'Kenapa dinamakan ikan?','Warnanya kuning','Karena punya insang','Karena punya sayap','b','2019-07-07'),(7,4,'Kenapa kamu suka spongeboob?','Karena Ngeselin','Karena Kuning','Karena Kocak kaya saya','c','2019-07-07'),(9,5,'Kenapa kamu suka persib?','Karena saya orang jawa barat','Karena saya orang argentina','Karena saya orang-orangan','a','2021-07-10'),(10,6,'Siapakah penemu listrik?','Sudah pasti orang','Saya tidak tau','Yang pasti bukan saya','a','2021-07-10');
 /*!40000 ALTER TABLE `test_online` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -228,4 +340,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-10 19:26:46
+-- Dump completed on 2021-07-15 21:07:24

@@ -25,6 +25,34 @@ class Page extends CI_Controller {
 		$this->template->load('template','page/career',$data);
 	}
 
+	public function prodi()
+	{
+		$this->db->order_by('id');
+		$data['prodi'] = $this->db->get('prodi')->result();
+		$this->template->load('template','page/prodi',$data);
+	}	
+
+	public function bidang_usaha()
+	{
+		$this->db->order_by('id');
+		$data['bidang_usaha'] = $this->db->get('bidang_usaha')->result();
+		$this->template->load('template','page/bidang_usaha',$data);
+	}	
+
+	public function sektor_usaha()
+	{
+		$this->db->order_by('id');
+		$data['sektor_usaha'] = $this->db->get('sektor_usaha')->result();
+		$this->template->load('template','page/sektor_usaha',$data);
+	}		
+
+	public function mitra()
+	{
+		$this->db->order_by('id');
+		$data['mitra'] = $this->db->get('mitra')->result();
+		$this->template->load('template','page/mitra',$data);
+	}			
+
 	public function cara_apply()
 	{
 		$this->template->load('template','page/career/cara_apply');

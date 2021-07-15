@@ -188,9 +188,216 @@ class Admin extends CI_Controller {
 		redirect('admin/career');
 	}
 
+	public function prodi()
+	{
+		is_admin();
+		$this->db->order_by('id','DESC');
+		$data['prodi'] = $this->db->get('prodi')->result();
+		$this->template->load('template','page/admin/prodi',$data);
+	}
 
+	public function prodi_add()
+	{
+		is_admin();
+	    if($this->form_validation->run('prodi') == false) {
+	      $this->template->load('template','page/admin/create_prodi');
+	    } else {
+	      $data = [
+	        'kode'  => $this->input->post('kode'),
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->insert('prodi',$data);
+	      alertsuccess('message','Data berhasil ditambahkan');
+	      redirect('admin/prodi');
+	    }
+	}
+	public function prodi_edit($id)
+	{
+		is_admin();
+	    if($this->form_validation->run('prodi') == false) {
 
+	      $data['prodi'] = $this->db->get_where('prodi',['id' => $id])->row();
+	      $this->template->load('template','page/admin/edit_prodi',$data);
+	    
+	    } else {
+	      $data = [
+	        'kode'  => $this->input->post('kode'),
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->update('prodi',$data,['id' => $id]);
+	      alertsuccess('message','Data berhasil diubah');
+	      redirect('admin/prodi');
+	    }
+	}
 
+	public function prodi_del($id)
+	{
+		is_admin();
+		$this->db->delete('prodi',['id' => $id]);
+
+		alertsuccess('message','Data berhasil dihapus');
+		redirect('admin/prodi');
+	}
+
+	public function bidang_usaha()
+	{
+		is_admin();
+		$this->db->order_by('id','DESC');
+		$data['bidang_usaha'] = $this->db->get('bidang_usaha')->result();
+		$this->template->load('template','page/admin/bidang_usaha',$data);
+	}
+
+	public function bidang_usaha_add()
+	{
+		is_admin();
+	    if($this->form_validation->run('bidang_usaha') == false) {
+	      $this->template->load('template','page/admin/create_bidang_usaha');
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->insert('bidang_usaha',$data);
+	      alertsuccess('message','Data berhasil ditambahkan');
+	      redirect('admin/bidang_usaha');
+	    }
+	}
+	public function bidang_usaha_edit($id)
+	{
+		is_admin();
+	    if($this->form_validation->run('bidang_usaha') == false) {
+
+	      $data['bidang_usaha'] = $this->db->get_where('bidang_usaha',['id' => $id])->row();
+	      $this->template->load('template','page/admin/edit_bidang_usaha',$data);
+	    
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->update('bidang_usaha',$data,['id' => $id]);
+	      alertsuccess('message','Data berhasil diubah');
+	      redirect('admin/prodi');
+	    }
+	}
+
+	public function bidang_usaha_del($id)
+	{
+		is_admin();
+		$this->db->delete('bidang_usaha',['id' => $id]);
+
+		alertsuccess('message','Data berhasil dihapus');
+		redirect('admin/bidang_usaha');
+	}	
+
+	public function sektor_usaha()
+	{
+		is_admin();
+		$this->db->order_by('id','DESC');
+		$data['sektor_usaha'] = $this->db->get('sektor_usaha')->result();
+		$this->template->load('template','page/admin/sektor_usaha',$data);
+	}
+
+	public function sektor_usaha_add()
+	{
+		is_admin();
+	    if($this->form_validation->run('sektor_usaha') == false) {
+	      $this->template->load('template','page/admin/create_sektor_usaha');
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->insert('sektor_usaha',$data);
+	      alertsuccess('message','Data berhasil ditambahkan');
+	      redirect('admin/sektor_usaha');
+	    }
+	}
+	public function sektor_usaha_edit($id)
+	{
+		is_admin();
+	    if($this->form_validation->run('sektor_usaha') == false) {
+
+	      $data['sektor_usaha'] = $this->db->get_where('sektor_usaha',['id' => $id])->row();
+	      $this->template->load('template','page/admin/edit_sektor_usaha',$data);
+	    
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	      ];
+	      $this->db->update('sektor_usaha',$data,['id' => $id]);
+	      alertsuccess('message','Data berhasil diubah');
+	      redirect('admin/sektor_usaha');
+	    }
+	}
+
+	public function sektor_usaha_del($id)
+	{
+		is_admin();
+		$this->db->delete('sektor_usaha',['id' => $id]);
+
+		alertsuccess('message','Data berhasil dihapus');
+		redirect('admin/sektor_usaha');
+	}
+
+	public function mitra()
+	{
+		is_admin();
+		$this->db->order_by('id','DESC');
+		$data['mitra'] = $this->db->get('mitra')->result();
+		$this->template->load('template','page/admin/mitra',$data);
+	}
+
+	public function mitra_add()
+	{
+		is_admin();
+	    if($this->form_validation->run('mitra') == false) {
+	      $this->template->load('template','page/admin/create_mitra');
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	        'alamat' => $this->input->post('alamat'),
+	        'kontak'  => $this->input->post('kontak'),
+	        'telpon' => $this->input->post('telpon'),	        
+	        'email' => $this->input->post('email'),	        
+	        'web' => $this->input->post('web'),
+	        'bidang_usaha_id' => $this->input->post('bidang_usaha_id'),
+	        'sektor_usaha_id' => $this->input->post('sektor_usaha_id'),	        	        	        
+	      ];
+	      $this->db->insert('mitra',$data);
+	      alertsuccess('message','Data berhasil ditambahkan');
+	      redirect('admin/mitra');
+	    }
+	}
+	public function mitra_edit($id)
+	{
+		is_admin();
+	    if($this->form_validation->run('mitra') == false) {
+
+	      $data['mitra'] = $this->db->get_where('mitra',['id' => $id])->row();
+	      $this->template->load('template','page/admin/edit_mitra',$data);
+	    
+	    } else {
+	      $data = [
+	        'nama'  => $this->input->post('nama'),
+	        'alamat' => $this->input->post('alamat'),
+	        'kontak'  => $this->input->post('kontak'),
+	        'telpon' => $this->input->post('telpon'),	        
+	        'email' => $this->input->post('email'),	        
+	        'web' => $this->input->post('web'),
+	        'bidang_usaha_id' => $this->input->post('bidang_usaha_id'),
+	        'sektor_usaha_id' => $this->input->post('sektor_usaha_id'),	        	        	        
+	      ];
+	      $this->db->update('mitra',$data,['id' => $id]);
+	      alertsuccess('message','Data berhasil diubah');
+	      redirect('admin/mitra');
+	    }
+	}
+
+	public function mitra_del($id)
+	{
+		is_admin();
+		$this->db->delete('mitra',['id' => $id]);
+
+		alertsuccess('message','Data berhasil dihapus');
+		redirect('admin/mitra');
+	}
 	
-
 }

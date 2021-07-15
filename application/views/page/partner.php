@@ -3,7 +3,7 @@
 	<div class="col-md-9">
 		<div class="card">
 		<div class="card-body">
-            <h4 class="mb-3" style="text-align: center;"> <strong> Mitra Perusahaan Kami </strong></h4>
+            <h4 class="mb-3" style="text-align: center;"> <strong> Partner Bisnis Perusahaan Kami </strong></h4>
             <p>Kami menyambut baik berbagai inovasi kemitraan dengan perusahaan-perusahaan di Indonesia yang memiliki
               visi yang sama dengan kami. Karena itu SILOKERNF bekerja sama dengan beberapa perusahaan maupun lembaga
               pendidikan.</p>
