@@ -7,9 +7,9 @@
 			<div class="card-body">
 				 
 				  <div class="form-group row">
-				    <label class="col-sm-3 col-form-label">Info</label>
+				    <label class="col-sm-3 col-form-label">Kode</label>
 				    <div class="col-sm-9">
-				      <input type="text" class="form-control" placeholder="Info" name="info" required value="<?= $prodi->kode ?>">
+				      <input type="text" class="form-control" placeholder="Kode" name="kode" required value="<?= $prodi->kode ?>">
 				      <?= form_error('info','<small class="form-text text-danger">','</small>') ?>
 				    </div>
 				  </div>
